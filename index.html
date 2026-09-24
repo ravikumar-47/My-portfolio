@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio — Websites for small businesses</title>
+<meta name="description" content="A showcase of websites built for small businesses." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,500;0,9..144,600;1,9..144,500&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="#top" id="brandLink">YN</a>
+  <nav class="nav">
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero" id="top">
+    <div class="hero-text">
+      <h1 class="hero-title">Websites that make small businesses look like they've already made it.</h1>
+      <p class="hero-sub" id="heroSub">I design and build fast, mobile-first websites for local businesses.</p>
+    </div>
+
+    <div class="hero-windows" aria-hidden="true">
+      <div class="window-card hero-window" style="--rot:-7deg; --accent: var(--coral); --x:0; --y:10px;">
+        <div class="window-chrome">
+          <span class="dot" style="background:var(--accent)"></span>
+          <span class="dot" style="background:var(--line)"></span>
+          <span class="dot" style="background:var(--line)"></span>
+        </div>
+        <div class="window-body hero-body-1">
+          <span class="body-line w-60"></span>
+          <span class="body-line w-40"></span>
+          <span class="body-pill"></span>
+        </div>
+      </div>
+
+      <div class="window-card hero-window" style="--rot:4deg; --accent: var(--mint); --x:26px; --y:70px;">
+        <div class="window-chrome">
+          <span class="dot" style="background:var(--accent)"></span>
+          <span class="dot" style="background:var(--line)"></span>
+          <span class="dot" style="background:var(--line)"></span>
+        </div>
+        <div class="window-body hero-body-2">
+          <span class="body-block"></span>
+          <span class="body-line w-50"></span>
+        </div>
+      </div>
+
+      <div class="window-card hero-window" style="--rot:-3deg; --accent: var(--marigold); --x:8px; --y:150px;">
+        <div class="window-chrome">
+          <span class="dot" style="background:var(--accent)"></span>
+          <span class="dot" style="background:var(--line)"></span>
+          <span class="dot" style="background:var(--line)"></span>
+        </div>
+        <div class="window-body hero-body-3">
+          <span class="body-line w-70"></span>
+          <span class="body-line w-30"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <div class="work-grid" id="workGrid">
+      <!-- project cards injected by main.js from portfolio-data.js -->
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="footer-primary">
+    <p class="footer-name" id="footerName">Your Name</p>
+    <p class="footer-tag" id="footerTag">I build websites for small businesses.</p>
+  </div>
+  <div class="footer-links" id="footerLinks">
+    <!-- email + socials injected by main.js from config.js -->
+  </div>
+  <p class="footer-year" id="footerYear">© 2026</p>
+</footer>
+
+<script src="config.js"></script>
+<script src="portfolio-data.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
